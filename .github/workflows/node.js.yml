@@ -28,5 +28,5 @@ jobs:
         cache: 'npm'
     - run: npm install 
     - run: npm install -g pm2
-    - run: npm start index.js
+    - run: pm2 start index.js
     - run: npm test
