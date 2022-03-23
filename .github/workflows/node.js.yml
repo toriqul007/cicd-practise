@@ -27,6 +27,6 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm install 
-    - run: npm install pm2
+    - run: npm install -g pm2
     - run: npm start index.js
     - run: npm test
